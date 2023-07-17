@@ -1,0 +1,10 @@
+name: First Workflow            # (name is a reserved word)
+on: workflow_dispatch           # with this event makes sure that we can manually trigger this workflow, (on is a reserved word)
+jobs:                           # jobs of the workflow (jobs is a reserved word)
+  first-job:                    # first-job is the name of the firt job and it's not a reserved word
+    runs-on: ubuntu-latest      # this is the ennvironment where the job will run  (runs-on is a reserved word)
+    steps:                      # steps of the job (steps is a reserved word)
+    - name: Print greeting
+      run: echo "Hello World"   # (run is a reserved word)
+    - name: Print goodbye
+      run: echo "Done - bye!"      
