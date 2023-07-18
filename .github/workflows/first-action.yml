@@ -7,4 +7,8 @@ jobs:                           # jobs of the workflow (jobs is a reserved word)
     - name: Print greeting
       run: echo "Hello World"   # (run is a reserved word)
     - name: Print goodbye
-      run: echo "Done - bye!"      
+      run: |                     # if you need to run multiple line commands you can easily do so by adding the pipe symbol (|)
+        echo "First output"
+        echo "Second output"
+        echo "Done - bye!"  
+      
